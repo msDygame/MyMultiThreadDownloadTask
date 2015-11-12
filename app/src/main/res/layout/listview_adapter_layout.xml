@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginLeft="1px"
+        android:layout_marginTop="10px"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53px"
+        android:layout_marginTop="20px"
+        android:textSize="16px"
+        android:text="Logo" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDownloadTask"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="7px"
+        android:layout_marginTop="25px"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:alpha="0.7"
+        android:clickable="true"
+        android:max="100" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_button_download"
+        android:id="@+id/button1"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
